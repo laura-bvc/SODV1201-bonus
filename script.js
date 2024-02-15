@@ -11,14 +11,17 @@ Create a web page to show image gallery (10 points)
 
 var indexImg = 0; // current index for image array
 
-
 var arrayImgName = ["pic01.jpg", "pic02.jpg", "pic03.jpg"];
+
 var maxImg = arrayImgName.length; // total number of images
 var tagImg = document.getElementById("curr_img");
 displayImg(indexImg);
 
 var btnPrev = document.getElementById("prev");
 var btnNext = document.getElementById("next");
+
+btnPrev.addEventListener("click", function(){nextImg(-1);} );
+btnNext.addEventListener("click", function(){nextImg(1);} );
 
 function displayImg(n) { // show image at index name
 	indexImg = n;
