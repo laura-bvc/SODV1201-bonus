@@ -9,6 +9,7 @@ body {
 
 #containerImg {
 	width: 85vw;
+	max-width: 1000px;
 	margin: auto;
 	padding: 1vw;
 }
@@ -16,7 +17,15 @@ body {
 #curr_img {
 	width: 100%;
 }
+.div_left {
+	float: left;
+	padding: 1vw;
+}
 
+.div_right {
+	float: right;
+	padding: 1vw;
+}
 .btn {
 	font-size: 1.1em;
 }
@@ -26,6 +35,4 @@ body {
   color: white;
 }
 
-#next {
-	margin-left: 68vw;
-}
+
